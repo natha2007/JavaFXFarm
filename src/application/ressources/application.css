@@ -1,0 +1,29 @@
+.root {
+    -fx-background-color: #1e1e1e;
+}
+
+.menu {
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-font-size: 16px;
+    -fx-pref-width: 200px;
+    -fx-background-color: #3c7dd9;
+    -fx-text-fill: white;
+}
+
+.btnPlay {
+	-fx-font-size: 16px;
+    -fx-pref-width: 200px;
+    -fx-background-color: yellow;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: #5a9bff;
+}
+
+.button:pressed {
+    -fx-background-color: #2f5fa8;
+}
