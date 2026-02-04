@@ -1,1 +1,45 @@
+# ======================
+# Java
+# ======================
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+
+# Build directories
+bin/
+out/
+target/
+build/
+
+# ======================
+# JavaFX (si libs locales)
+# ======================
+lib/javafx*
+*.jar
+
+# ======================
+# Eclipse
+# ======================
+.metadata/
+.settings/
+.project
+.classpath
+.recommenders/
+.externalToolBuilders/
+*.launch
+
+# ======================
+# OS
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Temporary files
+# ======================
+*.tmp
+*.bak
+*.swp
+*~
 
