@@ -7,6 +7,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
@@ -25,7 +26,7 @@ public class Main extends Application {
 		        VBox menu = new VBox(15, playBtn, optionsBtn, quitBtn);
 		        menu.getStyleClass().add("menu");
 
-		        Scene scene = new Scene(menu, 300, 400);
+		        Scene scene = new Scene(menu, 1000, 600);
 		        scene.getStylesheets().add(
 		            getClass().getResource("/application/ressources/application.css").toExternalForm()
 		        );
@@ -33,6 +34,16 @@ public class Main extends Application {
 		        stage.setTitle("Menu JavaFX");
 		        stage.setScene(scene);
 		        stage.show();
+		        
+		        VBox game = new VBox(8);
+		        game.getChildren().addAll(new Label("salut"));
+		        
+		        Scene scene2 = new Scene(game, 1000,600);
+		        
+		        playBtn.setOnAction(e -> {
+		        	stage.setScene(scene2);
+		        });
+		        
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
