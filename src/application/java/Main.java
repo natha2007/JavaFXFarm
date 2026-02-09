@@ -5,6 +5,7 @@ package application.java;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -35,13 +36,10 @@ public class Main extends Application {
 		        stage.setScene(scene);
 		        stage.show();
 		        
-		        VBox game = new VBox(8);
-		        game.getChildren().addAll(new Label("salut"));
-		        
-		        Scene scene2 = new Scene(game, 1000,600);
+		        Game game = new Game(Game.getContent(), 1000, 600);
 		        
 		        playBtn.setOnAction(e -> {
-		        	stage.setScene(scene2);
+		        	stage.setScene(game);
 		        });
 		        
 		} catch(Exception e) {
