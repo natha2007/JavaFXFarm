@@ -18,7 +18,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
 		try {
-			 Button playBtn = new Button("Jouer");
+			 	Button playBtn = new Button("Jouer");
 		        Button optionsBtn = new Button("Options");
 		        Button quitBtn = new Button("Quitter");
 		        
@@ -36,10 +36,11 @@ public class Main extends Application {
 		        stage.setScene(scene);
 		        stage.show();
 		        
-		        Game game = new Game(Game.getContent(), 1000, 600);
+		        VBox vBoxTest = new VBox(5, new Label("Test"));
+		        Scene test = new Scene(vBoxTest, 1000, 600);
 		        
 		        playBtn.setOnAction(e -> {
-		        	stage.setScene(game);
+		        	stage.setScene(test);
 		        });
 		        
 		} catch(Exception e) {
